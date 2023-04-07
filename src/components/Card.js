@@ -15,7 +15,7 @@ const Card = ({ review }) => {
 
 
             <h2 className=' text-2xl capitalize font-bold'>{review.name}</h2>
-            <h3 className='text-violet-300 mt-7 uppercase text-sm'>{review.job}</h3>
+            <h3 className='text-violet-300 mt-3 uppercase text-sm'>{review.job}</h3>
             <div className='text-violet-400 mx-auto mt-5'><FaQuoteLeft /></div>
             <p className=' text-center mt-4 text-slate-500'>{review.text}</p>
             <div className='text-violet-400 mx-auto mt-5'><FaQuoteRight /></div>
