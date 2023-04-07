@@ -3,7 +3,8 @@ import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa'
 
 const NewCard = ({ review }) => {
     return (
-        <div className='mt-[5rem] bg-white h-[70vh]'>
+
+        <div className='mt-[5rem] bg-white pb-[2rem]'>
 
             <div className="w-[85vw] md:w-[700px] bg-white flex flex-col  justify-center items-center  px-[5rem] pt-10 pb-16 transition-all duration-700 hover:shadow-xl rounded-md relative">
 
@@ -12,7 +13,7 @@ const NewCard = ({ review }) => {
 
                         <img
                             className="w-[140px] aspect-square rounded-full z-[25] shadow-lg shadow-slate-600"
-                            src={review.image} alt="" />
+                            src={review.image} alt="reviewer" />
 
                         <div className='absolute w-[140px] aspect-square rounded-full bg-violet-500  top-[-6px]  left-[10px] z-[-1] '></div>
                     </div>
