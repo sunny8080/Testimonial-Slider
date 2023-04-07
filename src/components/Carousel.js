@@ -11,8 +11,10 @@ const Carousel = ({ children: slides }) => {
     const prev = () => (curIndex !== 0 && setCurIndex(curIndex - 1));
     const next = () => (curIndex !== slides.length - 1 && setCurIndex(curIndex + 1));
 
+
     // switch slides using dots
     const switchSlide = (ind) => (setCurIndex(ind));
+
 
     // Apply transition on left / right click arrow
     document.onkeydown = (e) => {
@@ -21,9 +23,6 @@ const Carousel = ({ children: slides }) => {
         if (e.key === "ArrowRight") next(); // right arrow
     }
 
-    document.ondrag = (e) => {
-        console.log(e)
-    }
 
     useEffect(() => {
         // hide left / right button when there is no element to move
@@ -34,7 +33,7 @@ const Carousel = ({ children: slides }) => {
 
     return (
 
-        <div className="wrapper w-[85vw] md:w-[700px]  overflow-hidden relative">
+        <div className="w-[85vw] md:w-[700px]  overflow-hidden relative">
 
             <div className="flex transition-transform ease-out duration-700"
                 style={{ transform: ` translateX(-${curIndex * 100}%)` }}
