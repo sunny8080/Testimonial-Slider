@@ -1,10 +1,10 @@
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 const Carousel = ({ children: slides }) => {
     const [curIndex, setCurIndex] = useState(0);
 
-    const prev = () => (setCurIndex(curIndex == 0 ? slides.length - 1 : curIndex - 1))
+    const prev = () => (setCurIndex(curIndex === 0 ? slides.length - 1 : curIndex - 1))
 
     const next = () => (setCurIndex((curIndex + 1) % slides.length));
 
