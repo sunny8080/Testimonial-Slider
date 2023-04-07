@@ -21,7 +21,7 @@ const Testimonial = ({ reviews }) => {
 
     return (
 
-        <div className="w-[85vw] md:w-[700px] bg-white flex flex-col  justify-center items-center mt-10 px-[5rem] py-10 transition-all duration-700 hover:shadow-xl rounded-md relative">
+        <div className="w-[85vw] md:w-[700px] bg-white flex flex-col  justify-center items-center mt-10 mb-10 px-[5rem] py-10 transition-all duration-700 hover:shadow-xl rounded-md relative">
             <Card review={reviews[index]} />
 
             <button
